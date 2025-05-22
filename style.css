@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: wheat;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    width: 100%;
+    border-bottom: 1px solid wheat;
+    box-sizing: border-box;
+}
+
+.header .btn {
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.inputs {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.scroll_crimes {
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid wheat;
+    color: wheat;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid wheat;
+    box-sizing: border-box;
+    text-align: center;
+}

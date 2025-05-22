@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Penal - GTA RP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="header">
+            <h1>Calculadora Penal - GTA RP</h1>
+            <Button class="btn">Menu</Button>
+        </div>
+        <div>
+            <div class="inputs">
+                <input type="text" id="nome" placeholder="Nome do Suspeito">
+                <input type="text" id="id" placeholder="Id do Suspeito">
+            </div>
+            <div class="crimes">
+                <h2>Crimes</h2>
+                <p>Selecione abaixo os crimes cometidos:</p>
+                <div class="scroll_crimes">
+                        <table>
+                            <tr>
+                                <th><h2>Crime</h2></th>
+                                <th><h2>Penalidade</h2></th>
+                                <th><h2>Fiança</h2></th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="desacato" value="desacato">Desacato</td>
+                                <td><input type="checkbox" id="resistencia" value="resistencia">Resistência à prisão</td>
+                                <td><input type="checkbox" id="porte_branca" value="porte_branca">Porte de arma branca</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
