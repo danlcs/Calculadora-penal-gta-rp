@@ -1,41 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Calculadora Penal - GTA RP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="conteudo">
         <div class="header">
             <h1>Calculadora Penal - GTA RP</h1>
-            <Button class="btn">Menu</Button>
         </div>
         <div>
             <div class="inputs">
-                <input type="text" id="nome" placeholder="Nome do Suspeito">
-                <input type="text" id="id" placeholder="Id do Suspeito">
+                <input class="text" type="text" id="nome" placeholder="Nome do Suspeito" />
+                <input class="text" type="number" id="id" placeholder="Id do Suspeito" />
             </div>
             <div class="crimes">
                 <h2>Crimes</h2>
                 <p>Selecione abaixo os crimes cometidos:</p>
                 <div class="scroll_crimes">
-                        <table>
-                            <tr>
-                                <th><h2>Crime</h2></th>
-                                <th><h2>Penalidade</h2></th>
-                                <th><h2>Fiança</h2></th>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" id="desacato" value="desacato">Desacato</td>
-                                <td><input type="checkbox" id="resistencia" value="resistencia">Resistência à prisão</td>
-                                <td><input type="checkbox" id="porte_branca" value="porte_branca">Porte de arma branca</td>
-                            </tr>
-                        </table>
+                    <table>
+                        <tr>
+                            <th><h2>Selecione</h2></th>
+                            <th><h2>Crime</h2></th>
+                            <th><h2>Penalidade (meses)</h2></th>
+                            <th><h2>Fiança</h2></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="cell-wrapper">
+                                    <input type="checkbox" id="desacato" value="desacato" />
+                                    <div class="overlay">
+                                        <span class="checkmark">✅</span>
+                                    </div>
+                                </label>
+                            </td>
+                            <td><h4>Desacato</h4></td>
+                            <td><h4>5</h4></td>
+                            <td><h4>$2.500</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="cell-wrapper">
+                                    <input type="checkbox" id="ameaça" value="ameaça" />
+                                    <div class="overlay">
+                                        <span class="checkmark">✅</span>
+                                    </div>
+                                </label>
+                            </td>
+                            <td><h4>Ameaça</h4></td>
+                            <td><h4>5</h4></td>
+                            <td><h4>$2.500</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="cell-wrapper">
+                                    <input type="checkbox" id="roubo" value="roubo" />
+                                    <div class="overlay">
+                                        <span class="checkmark">✅</span>
+                                    </div>
+                                </label>
+                            </td>
+                            <td><h4>Roubo</h4></td>
+                            <td><h4>12</h4></td>
+                            <td><h4>$10.000</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="cell-wrapper">
+                                    <input type="checkbox" id="assalto" value="assalto" />
+                                    <div class="overlay">
+                                        <span class="checkmark">✅</span>
+                                    </div>
+                                </label>
+                            </td>
+                            <td><h4>Assalto</h4></td>
+                            <td><h4>15</h4></td>
+                            <td><h4>$12.000</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="cell-wrapper">
+                                    <input type="checkbox" id="porte_ilegal" value="porte_ilegal" />
+                                    <div class="overlay">
+                                        <span class="checkmark">✅</span>
+                                    </div>
+                                </label>
+                            </td>
+                            <td><h4>Porte Ilegal de Arma</h4></td>
+                            <td><h4>8</h4></td>
+                            <td><h4>$5.000</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="cell-wrapper">
+                                    <input type="checkbox" id="homicidio" value="homicidio" />
+                                    <div class="overlay">
+                                        <span class="checkmark">✅</span>
+                                    </div>
+                                </label>
+                            </td>
+                            <td><h4>Homicídio</h4></td>
+                            <td><h4>24</h4></td>
+                            <td><h4>$0 (Sem Fiança)</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="cell-wrapper">
+                                    <input type="checkbox" id="corrupcao" value="corrupcao" />
+                                    <div class="overlay">
+                                        <span class="checkmark">✅</span>
+                                    </div>
+                                </label>
+                            </td>
+                            <td><h4>Corrupção</h4></td>
+                            <td><h4>10</h4></td>
+                            <td><h4>$7.500</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="cell-wrapper">
+                                    <input type="checkbox" id="trafico" value="trafico" />
+                                    <div class="overlay">
+                                        <span class="checkmark">✅</span>
+                                    </div>
+                                </label>
+                            </td>
+                            <td><h4>Tráfico de Drogas</h4></td>
+                            <td><h4>20</h4></td>
+                            <td><h4>$15.000</h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <button class="btn">Calcular</button>
+                <div>
+                    <h3>Nome</h3>
+                    <h3>Id</h3>
+                    <h3>Penalidade</h3>
+                    <h3>Fiança</h3>
                 </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
