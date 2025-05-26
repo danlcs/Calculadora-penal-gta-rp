@@ -101,8 +101,6 @@ th, tr, td {
     padding-right: 5px;
 }
 
-/* Adicione isso ao seu arquivo style.css */
-
 .btn {
     background-color: #8B4513;
     color: wheat;
@@ -163,4 +161,83 @@ h3 {
 
 h4 {
     font-size: 1rem;
+}
+/* Responsividade geral */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 5% 0;
+    }
+
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+
+    .scroll_crimes {
+        height: 250px;
+        font-size: 0.9rem;
+    }
+
+    table, th, td {
+        font-size: 0.8rem;
+    }
+
+    .cell-wrapper .overlay {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        scale: 1.5;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pequenos ajustes pra telas muito pequenas */
+@media (max-width: 480px) {
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .cell-wrapper .overlay {
+        font-size: 1rem;
+    }
+
+    table, th, td {
+        font-size: 0.7rem;
+    }
+
+    .text {
+        scale: 1.3;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
